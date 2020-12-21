@@ -1,0 +1,25 @@
+
+<app-home [title]="'home component 1'"></app-home>
+<div>
+  <h2>Product List</h2>
+  <app-product-list #productList></app-product-list>
+</div>
+
+<!-- router -->
+<div>
+<ul>
+  <li>
+    <a [routerLink]="['/']">Home</a>
+  </li>
+  <li>
+    <a [routerLink]="['/login']">Login</a>
+  </li>
+  <li>
+    <a [routerLink]="['/products']">Products</a>
+  </li>
+</ul>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+ 
